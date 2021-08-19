@@ -1,0 +1,33 @@
+.all-the-benefits-list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.benefit {
+  margin-left: 30px;
+  max-width: 270px;
+}
+
+.benefits {
+  padding-top: 94px;
+}
+
+.benefit-icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+}
+
+.text-of-benefits {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
