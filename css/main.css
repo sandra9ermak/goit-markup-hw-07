@@ -135,35 +135,33 @@ body {
   background-color: #188ce8;
 }
 
-.logo-header {
+.logo {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--accent-color);
   margin-right: 90px;
 }
 
-.logo-footer {
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.logo-theme-dark {
+  color: #fff;
 }
 
-.styles-for-web {
-  color: var(--accent-color);
+.logo-theme-light {
+  color: #000;
 }
 
-.head-of-benefits {
+.small-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+
+.benefits-list__title {
   margin-bottom: 10px;
 }
 
@@ -175,12 +173,7 @@ body {
   width: 370px;
   height: 70px;
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
   text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
   background: rgba(47, 48, 58, 0.8);
   overflow: auto;
@@ -188,22 +181,11 @@ body {
 
 .title-footer-icon {
   font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
 
 .footer-mail-title {
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: #ffffff;
   margin-bottom: 20px;
 }
@@ -484,7 +466,7 @@ body {
   border-bottom: 1px solid #ececec;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -499,7 +481,7 @@ body {
   transition-delay: 70ms;
 }
 
-.menu-link.active::after {
+.menu__link.active::after {
   position: absolute;
   content: '';
   background-color: var(--accent-color);
@@ -510,7 +492,7 @@ body {
   bottom: -1px;
 }
 
-.menu-link:hover, .menu-link:focus {
+.menu__link:hover, .menu__link:focus {
   color: var(--accent-color);
 }
 
@@ -556,25 +538,25 @@ body {
   cursor: pointer;
 }
 
-.header-contacts-list:not(:last-child) {
+.header-contacts__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-mail-icon {
+.menu-contacts__mail-icon {
   margin-right: 10px;
   align-items: center;
 }
 
-.header-mail-icon:hover, .header-mail-icon:focus {
+.menu-contacts__mail-icon:hover, .menu-contacts__mail-icon:focus {
   fill: var(--accent-color);
 }
 
-.header-tel-icon {
+.menu-contacts__tel-icon {
   margin-right: 9px;
   align-items: center;
 }
 
-.header-tel-icon:hover, .header-tel-icon:focus {
+.menu-contacts__tel-icon:hover, .menu-contacts__tel-icon:focus {
   fill: #2196f3;
 }
 
@@ -584,7 +566,7 @@ body {
   align-items: center;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -612,12 +594,12 @@ body {
   margin-right: auto;
 }
 
-.all-the-benefits-list {
+.benefits-list {
   display: flex;
   margin-left: -30px;
 }
 
-.benefit {
+.benefits-list__benefit {
   margin-left: 30px;
   max-width: 270px;
 }
@@ -626,7 +608,7 @@ body {
   padding-top: 94px;
 }
 
-.benefit-icon-list {
+.benefits-list__icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -637,7 +619,7 @@ body {
   margin-bottom: 30px;
 }
 
-.text-of-benefits {
+.benefits-list__text {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;

@@ -1,22 +1,17 @@
-.logo-header {
+.logo {
   font-family: var(--secondary-font);
   font-weight: bold;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #000000;
+  color: var(--accent-color);
   margin-right: 90px;
 }
 
-.logo-footer {
-  font-family: var(--secondary-font);
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: #ffffff;
+.logo-theme-dark {
+  color: #fff;
 }
 
-.styles-for-web {
-  color: var(--accent-color);
+.logo-theme-light {
+  color: #000;
 }

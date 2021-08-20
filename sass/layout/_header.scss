@@ -7,7 +7,7 @@
   border-bottom: 1px solid #ececec;
 }
 
-.menu-link {
+.menu__link {
   position: relative;
   font-weight: 500;
   font-size: 14px;
@@ -83,11 +83,11 @@
   }
 }
 
-.header-contacts-list:not(:last-child) {
+.header-contacts__list:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-mail-icon {
+.menu-contacts__mail-icon {
   margin-right: 10px;
   align-items: center;
 
@@ -97,7 +97,7 @@
   }
 }
 
-.header-tel-icon {
+.menu-contacts__tel-icon {
   margin-right: 9px;
   align-items: center;
 
@@ -113,6 +113,6 @@
   align-items: center;
 }
 
-.menu-item:not(:last-child) {
+.menu__item:not(:last-child) {
   margin-right: 50px;
 }
